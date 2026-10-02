@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRAKEN MOVIE</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+}
+
+.logo {
+  color: #00aaff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.search {
+  margin-top: 15px;
+  width: 90%;
+  max-width: 500px;
+  padding: 13px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.container {
+  padding: 20px;
+}
+
+h2 {
+  color: #00aaff;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.movie {
+  background: #151515;
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 12px;
+}
+
+.movie img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.movie h3 {
+  margin: 10px;
+  font-size: 17px;
+}
+
+.movie p {
+  margin: 10px;
+  color: #aaa;
+}
+
+.watch {
+  margin: 0 10px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #008cff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.watch:active {
+  background: #006dcc;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🎬 CRAKEN MOVIE</div>
+
+  <input
+    class="search"
+    type="text"
+    id="search"
+    placeholder="🔎 Kino qidirish..."
+    onkeyup="searchMovies()"
+  >
+</header>
+
+<div class="container">
+
+<h2>🔥 Yangi kinolar</h2>
+
+<div class="movies" id="movies">
+
+  <div class="movie
